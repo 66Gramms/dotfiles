@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "custom/media"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "clock",
+    "network",
+    "battery",
+    "custom/power"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 150
+  },
+  "custom/launcher": {
+    "on-click": "~/.config/rofi/applets/bin/powermenu.sh",
+    "format": ""
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "scroll-step": 1,
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "network": {
+    "tooltip": false,
+    "format-wifi": " {essid}",
+    "format-ethernet": " Connected",
+    "format-disconnected": "睊",
+    "on-click": "~/.config/waybar/selectWifi.sh"
+  },
+  "backlight": {
+    "tooltip": false,
+    "format": " {}%",
+    "interval": 1,
+    "on-scroll-up": "light -A 1",
+    "on-scroll-down": "light -U 1"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 40,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": " {:%H:%M   %Y.%m.%d.}",
+    "format-alt": " {:%H:%M}",
+    "tooltip": false
+  },
+  "custom/media": {
+    "interval": 30,
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 20,
+    "format-icons": {
+      "spotify": " ",
+      "default": " "
+    },
+    "escape": true,
+    "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+    "on-click": "playerctl play-pause"
+  }
+}
