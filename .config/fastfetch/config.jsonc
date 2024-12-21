@@ -6,16 +6,26 @@
     "width": 30,
     "height": 13
   },
+  "display": {
+    "separator": "  > "
+  },
   "modules": [
     "title",
     "separator",
-    "os",
-    "host",
-    "kernel",
-    "shell",
-    "wm",
-    "font",
-    "terminal",
+    {
+      "type": "os",
+      "key": ""
+    },
+    {
+      "type": "host",
+      "key": "",
+      "format": "{1}"
+    },
+    { "type": "display", "key": "", "format": "{1}x{2}@{3}Hz" },
+    { "type": "kernel", "key": "" },
+    { "type": "shell", "key": "" },
+    { "type": "wm", "key": "", "format": "{2}" },
+    { "type": "terminal", "key": "", "format": "{1}" },
     "break"
   ]
 }
