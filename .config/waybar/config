@@ -24,7 +24,8 @@
   },
   "hyprland/window": {
     "format": "{title}",
-    "max-length": 150
+    "max-length": 150,
+    "icon": true
   },
   "custom/launcher": {
     "on-click": "~/.config/rofi/applets/bin/powermenu.sh",

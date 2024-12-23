@@ -23,6 +23,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
+  color: #161320;
   background-color: #9da9a0;
   margin-left: 10px;
 }
