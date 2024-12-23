@@ -7,25 +7,44 @@
     "height": 13
   },
   "display": {
-    "separator": "  > "
+    "separator": "  >  ",
+    "color": {
+      "separator": "1" // Bold
+    },
+    "constants": ["───────────────────────────"],
+    "key": {
+      "paddingLeft": 4
+    }
   },
   "modules": [
-    "title",
-    "separator",
     {
-      "type": "os",
-      "key": ""
+      "type": "title",
+      "format": "                             {user-name-colored}{at-symbol-colored}{host-name-colored}"
     },
+    "break",
     {
-      "type": "host",
-      "key": "",
-      "format": "{1}"
+      "type": "custom",
+      "format": "┌{$1} {#1}System Information{#} {$1}┐"
     },
+    { "type": "os", "key": "", "format": "{2}" },
+    { "type": "host", "key": "", "format": "{1}" },
+    { "type": "cpu", "key": "" },
+    { "type": "memory", "key": "" },
     { "type": "display", "key": "", "format": "{1}x{2}@{3}Hz" },
+    { "type": "custom", "format": "                             {$1}" },
     { "type": "kernel", "key": "" },
     { "type": "shell", "key": "" },
     { "type": "wm", "key": "", "format": "{2}" },
     { "type": "terminal", "key": "", "format": "{1}" },
-    "break"
+    {
+      "type": "custom",
+      "format": "└{$1}────────────────────{$1}┘"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 30,
+      "symbol": "circle"
+    }
   ]
 }
