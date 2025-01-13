@@ -1,6 +1,10 @@
+### Custom Configurations
+
 setopt autocd
 
+# Default directory for screenshots
 export GRIM_DEFAULT_DIR=~/Pictures/Screenshots
+export PATH="$PATH:~/.dotnet/tools"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -34,8 +38,7 @@ zinit snippet https://github.com/sainnhe/dotfiles/raw/master/.zsh-theme/everfore
 ### End of Zinit's installer chunk
 
 
-### Custom
-
+### Custom Aliases
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias icat='kitten icat'
