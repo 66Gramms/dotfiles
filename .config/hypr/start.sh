@@ -4,7 +4,7 @@ sleep 3s
 
 #ssh-add ~/.ssh/github &
 
-swww-daemon & sleep 0.3s && swww restore & swww img ~/Pictures/Wallpapers/japanese_pedestrian_street.png &
+swww-daemon & sleep 0.3s && swww restore & swww img ~/Pictures/Wallpapers/sierra.png &
 
 waybar &
 
