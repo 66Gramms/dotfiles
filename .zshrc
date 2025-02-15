@@ -37,6 +37,15 @@ source ~/.config/everforest-dark.zsh
 zinit snippet https://github.com/sainnhe/dotfiles/raw/master/.zsh-theme/everforest-dark.zsh
 ### End of Zinit's installer chunk
 
+HISTFILE=~/.zsh_history  # Path to history file
+HISTSIZE=100           # Number of commands stored in memory
+SAVEHIST=100           # Number of commands saved to file
+
+setopt append_history     # Append new commands to history file instead of overwriting
+setopt inc_append_history # Add commands to history immediately
+setopt share_history      # Share history across multiple terminals
+
+
 
 ### Custom Aliases
 alias ls='ls --color=auto'
