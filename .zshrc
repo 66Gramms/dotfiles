@@ -3,7 +3,6 @@
 setopt autocd
 
 # Default directory for screenshots
-export GRIM_DEFAULT_DIR=~/Pictures/Screenshots
 export PATH="$PATH:~/.dotnet/tools"
 
 ### Added by Zinit's installer
