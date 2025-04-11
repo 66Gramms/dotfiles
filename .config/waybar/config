@@ -29,7 +29,8 @@
   },
   "custom/launcher": {
     "on-click": "~/.config/rofi/applets/bin/powermenu.sh",
-    "format": ""
+    "format": "",
+    "tooltip": "false"
   },
   "pulseaudio": {
     "tooltip": false,
@@ -54,10 +55,16 @@
   },
   "backlight": {
     "tooltip": false,
-    "format": " {}%",
+    "format": "{icon} {percent}%",
     "interval": 1,
     "on-scroll-up": "light -A 1",
-    "on-scroll-down": "light -U 1"
+    "on-scroll-down": "light -U 1",
+    "format-icons": [
+      "󱩎",
+      "󱩐",
+      "󱩔",
+      "󰛨"
+    ]
   },
   "battery": {
     "states": {
@@ -85,18 +92,5 @@
     "format": " {:%H:%M   %Y.%m.%d.}",
     "format-alt": " {:%H:%M}",
     "tooltip": false
-  },
-  "custom/media": {
-    "interval": 30,
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 20,
-    "format-icons": {
-      "spotify": " ",
-      "default": " "
-    },
-    "escape": true,
-    "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-    "on-click": "playerctl play-pause"
   }
 }

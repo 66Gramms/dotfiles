@@ -170,30 +170,16 @@ window#waybar.hidden {
   color: #161320;
 }
 
-#custom-launcher button:hover {
-  background: #ffffff;
+@keyframes hoverAnimation {
+  to {
+    background-color: #c66b6d;
+  }
 }
 
-#custom-updates {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #e8a2af;
-}
-
-#custom-media {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #f2cdcd;
+#custom-launcher:hover {
+  animation-name: hoverAnimation;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
