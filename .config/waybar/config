@@ -14,7 +14,7 @@
     "backlight",
     "pulseaudio",
     "clock",
-    "network",
+    "tray",
     "battery",
     "custom/power"
   ],
@@ -29,7 +29,7 @@
   },
   "custom/launcher": {
     "on-click": "~/.config/rofi/applets/bin/powermenu.sh",
-    "format": ""
+    "format": ""
   },
   "pulseaudio": {
     "tooltip": false,
@@ -50,7 +50,7 @@
     "format-wifi": " {essid}",
     "format-ethernet": " Connected",
     "format-disconnected": "睊",
-    "on-click": "~/.config/waybar/selectWifi.sh"
+    "on-click": "nm-applet"
   },
   "backlight": {
     "tooltip": false,
