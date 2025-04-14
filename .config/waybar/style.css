@@ -55,11 +55,10 @@ window#waybar.empty #window {
 
 #pulseaudio {
   margin-top: 6px;
-  margin-left: 8px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 0px;
-  border-radius: 10px;
+  border-radius: 0 0 0 0;
   transition: none;
   color: #1a1826;
   background: #dbbc7f;
@@ -67,12 +66,11 @@ window#waybar.empty #window {
 
 #battery {
   margin-top: 6px;
-  margin-left: 8px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 0px;
   margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   transition: none;
   color: #161320;
   background: #b5e8e0;
@@ -107,7 +105,7 @@ window#waybar.empty #window {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 0px;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   transition: none;
   color: #161320;
   background: #e69875;
@@ -115,11 +113,11 @@ window#waybar.empty #window {
 
 #clock {
   margin-top: 6px;
-  margin-left: 8px;
+  margin-left: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 0px;
-  border-radius: 10px;
+  border-radius: 0 0 0 0;
   transition: none;
   color: #161320;
   background: #a7c080;
@@ -151,14 +149,14 @@ window#waybar.empty #window {
 
 #tray {
   margin-top: 6px;
-  margin-left: 8px;
+  margin-right: 0;
   padding-left: 10px;
-  margin-bottom: 0px;
   padding-right: 10px;
-  border-radius: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 10px 10px;
   transition: none;
-  color: #b5e8e0;
-  background: #161320;
+  color: #161320;
+  background: #1e2326;
 }
 
 #custom-launcher {
