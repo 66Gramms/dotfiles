@@ -26,7 +26,7 @@
       "type": "custom",
       "format": "┌{$1} {#1}System Information{#} {$1}┐"
     },
-    { "type": "os", "key": "", "format": "{2}" },
+    { "type": "os", "key": "󰣇 ", "format": "{2}" },
     { "type": "host", "key": "", "format": "{1}" },
     { "type": "cpu", "key": "" },
     { "type": "memory", "key": "" },

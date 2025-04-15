@@ -12,3 +12,10 @@ zstyle :compinstall filename '/home/gramms/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+### Custom Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias icat='kitten icat'
+alias search='grep -r'
+alias vim='nvim'
