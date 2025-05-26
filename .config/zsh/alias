@@ -1,0 +1,5 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias icat='kitten icat'
+alias search='grep -r'
+alias vim='nvim'

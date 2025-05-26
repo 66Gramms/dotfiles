@@ -1,7 +1,4 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
 setopt autocd extendedglob
 unsetopt beep
 bindkey -e
@@ -13,9 +10,4 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-### Custom Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias icat='kitten icat'
-alias search='grep -r'
-alias vim='nvim'
+[[ -f "$ZDOTDIR/alias" || -L "$ZDOTDIR/alias" ]] && source "$ZDOTDIR/alias"
