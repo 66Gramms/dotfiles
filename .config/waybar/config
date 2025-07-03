@@ -81,7 +81,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "  {:%H:%M    %Y.%m.%d.}",
+    "format": " {:%A %m.%d.\n    %H:%M}",
     "format-alt": "  {:%H:%M}",
     "tooltip": false
   },
